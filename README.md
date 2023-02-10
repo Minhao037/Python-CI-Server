@@ -1,5 +1,5 @@
-# se23-project2
-Basic continuous integration server for course DD2480
+# Python CI Server
+Basic continuous integration server 
 
 ## CI Server v0.1.0
 
@@ -46,7 +46,8 @@ Test files must be named `test_*.py`
 The server uses GitHub commit statuses to report the state of the CI build.
 Successes are documented with a green check mark, failures with a red X, and pending status with a yellow circle.
 
-**(P+)** To access CI job history, visit the `/history` route of the server.
+##### Store build history
+To access CI job history, visit the `/history` route of the server.
 
 To read documentation in a browsable format, run `python -m pydoc -b` from the `src/main` directory.
 
@@ -63,14 +64,11 @@ To run tests locally, run `python -m pytest` from the root directory.
 ## Testing 
 Features were tested with one positive test case per item being tested.
 
-### Essence
-Our group's adherence to the [Essence Standard](https://www.omg.org/spec/Essence/1.2/PDF) is documented in `essence.md`.
-
 ## License
 
 MIT License
 
-Copyright (c) 2023 Group 29
+Copyright (c) 2023 Minhao Ni
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -89,36 +87,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-## Contributors
-
-- David Kaméus 
-- Minhao Ni
-- Alexander Gustavsson
-- Carter Smith
-- Sanjin Redzepagic
-
-## Contributions
-- Sanjin Redzepagic
-    - Worked on the commit status function
-    - Worked on the testing, testing functions
-    
-- Minhao Ni
-    - Wrote documentation for the application files
-
-- Alexander Gustavsson
-    - Worked on the README
-    - Filled out the essence.MD file and wrote a paragraph about the groups process
-
-- Carter Smith
-    - Set up pip env, Flask boilerplate
-    - Implemented payload parsing in `utils.py`
-    - Implemented GitHub commit status changes
-
-- David Kaméus
-    - Imported essence.md and initial documentation
-    - Implemented CI job history features
-    - Fixed windows related bugs
-
